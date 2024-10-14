@@ -1,0 +1,23 @@
+header {
+    width: 100%;
+    padding: 0 5%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-box-logo {
+    width: 20%;
+}
+
+.header-logo {
+    width: 120%;
+}
+
+.header-social-medias i {
+    font-size: 1.3rem;
+    color: #1e88e5;
+    padding-left: 10px;
+    
+}
