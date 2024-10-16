@@ -1,0 +1,20 @@
+.main-header {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+    margin: 10% 0;
+}
+
+.inputs {
+    font-size: 1.2rem;
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid #844cff;
+    background-color: aqua;
+}
+
+.main-result {
+    text-align: center;
+}
