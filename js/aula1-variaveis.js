@@ -1,9 +1,11 @@
-let result = document.querySelector("#result");
+const form = document.querySelector('#form');
+const result = document.querySelector('#result');
+form.addEventListener('submit', returnSaudation);
 
-function returnSaudation() {
-    let name = document.querySelector("#name");
-    let saudation = `Olá, mundo! Eu sou o ${name.value}`;
-    
-    result.innerHTML = saudation;
+function returnSaudation(e) {
+    e.preventDefault();
 
+    const name = document.querySelector('#name');
+
+    result.innerHTML = `Olá, mundo! Eu sou o ${name.value}!`; 
 }
