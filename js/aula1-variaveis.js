@@ -7,5 +7,6 @@ function returnSaudation(e) {
 
     const name = document.querySelector('#name');
 
-    result.innerHTML = `Olá, mundo! Eu sou o ${name.value}!`; 
+    result.innerHTML = `Olá, mundo! Eu sou o ${name.value}!`;
+    name.value = ""; 
 }
