@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso desenvolvimento web</title>
-    <link rel="shortcut icon" href="./images/icon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="../images/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
@@ -24,8 +24,8 @@
     <header>
 
         <figure class="header-box-logo">
-            <a href="./index.html">
-                <img src="./images/logo.png" alt="Logo AL Tech Agencia Web" class="header-logo">
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="Logo AL Tech Agencia Web" class="header-logo">
             </a>
         </figure>
         
@@ -48,28 +48,19 @@
     <main>
         <section class="main-header">
             <h2>Desenvolvimento Web</h2>
-
             <p>Práticas de desenvolvimento Web - HTML5, CSS3 e JS</p>
-            
-            <ul class="inputs list">
-                <li>
-                    <a href="./assets/aula1-variaveis.html">Aula 1 - Variáveis</a>
-                </li>
-                <li>
-                    <a href="./assets/aula2-aritmeticos.html">Aula 2 - Aritméticos</a>
-                </li>
-                <li>
-                    <a href="./assets/aula3-idade.html">Aula 3 - Calcula idade</a>
-                </li>
-            </ul>
+            <a href="../index.html" class="inputs">Inicio</a>
         </section>
 
-        <form action="">
-            
+        <form action="" class="form-box" id="form">
+            <h3>Aula 2 - Operadores aritiméticos</h3>
+            <p>Digite o ano de nascimento, Ex: 2024, para saber se você pode tirar CNH</p>
+            <input type="number" name="bornYaer" id="bornYear" class="inputs input-number">
+            <button class="btn">EXECUTAR</button>
         </form>
 
         <section class="main-result">
-            <p class="main-result-content"></p>
+            <p class="main-result-content" id="result"></p>
         </section>
     </main>
 
@@ -77,6 +68,7 @@
         <span>&copy;AL Tech Academy <span id="footer-current-year">.</span>. Todos os direitos reservados</span>
     </footer>
 
-    <script src="./js/footer-current-year.js"></script>
+    <script src="../js/footer-current-year.js"></script>
+    <script src="../js/aula3-idade.js"></script>
 </body>
 </html>
