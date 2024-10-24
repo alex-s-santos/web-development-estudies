@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso desenvolvimento web</title>
-    <link rel="shortcut icon" href="./images/icon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="../images/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/specialStyles.css">
 </head>
 
 <!--Cores da logo 1e88e5, 42a5f5, 844cff, f2f2f2-->
@@ -24,8 +25,8 @@
     <header>
 
         <figure class="header-box-logo">
-            <a href="./index.html">
-                <img src="./images/logo.png" alt="Logo AL Tech Agencia Web" class="header-logo">
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="Logo AL Tech Agencia Web" class="header-logo">
             </a>
         </figure>
         
@@ -48,38 +49,24 @@
     <main>
         <section class="main-header">
             <h2>Desenvolvimento Web</h2>
-
             <p>Práticas de desenvolvimento Web - HTML5, CSS3 e JS</p>
-            
-            <ul class="inputs list">
-                <li>
-                    <a href="./assets/aula1-variaveis.html">Aula 1 - Variáveis</a>
-                </li>
-
-                <li>
-                    <a href="./assets/aula2-aritmeticos.html">Aula 2 - Aritméticos</a>
-                </li>
-
-                <li>
-                    <a href="./assets/aula3-idade.html">Aula 3 - Calcula idade</a>
-                </li>
-
-                <li>
-                    <a href="./assets/aula4-if.html">Aula 4 - Cond. simples</a>
-                </li>
-
-                <li>
-                    <a href="./assets/aula5-ifelse.html">Aula 5 - Cond. compostas</a>
-                </li>
-            </ul>
+            <a href="../index.html" class="inputs">Inicio</a>
         </section>
 
-        <form action="">
-            
+        <form action="" class="form-box" id="form">
+            <h3>Aula 5 - Condicionais  e operadores</h3>
+            <p>Calculadora de média</p>
+            <label for="note1">Nota 1</label>
+            <input type="text" name="note1" id="note1" class="inputs input-number" max="10">
+            | <label for="note2">Nota 2</label>
+            <input type="text" name="note1" id="note2" class="inputs input-number">
+            | <label for="note3">Nota 3</label>
+            <input type="text" name="note1" id="note3" class="inputs input-number">
+            | <button class="btn">EXECUTAR</button>
         </form>
 
         <section class="main-result">
-            <p class="main-result-content"></p>
+            <p class="main-result-content" id="result"></p>
         </section>
     </main>
 
@@ -87,6 +74,7 @@
         <span>&copy;AL Tech Academy <span id="footer-current-year">.</span>. Todos os direitos reservados</span>
     </footer>
 
-    <script src="./js/footer-current-year.js"></script>
+    <script src="../js/footer-current-year.js"></script>
+    <script src="../js/aula5-ifelse.js"></script>
 </body>
 </html>

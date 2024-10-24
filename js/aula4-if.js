@@ -10,7 +10,7 @@ function returnFined(e) {
     result.innerHTML = `Velocidade: ${carSpeed.value}km/h, Dirija com segurança! <br>`;
 
     if(Number(carSpeed.value) > 60) {
-        result.innerHTML += '⚠️Você foi multado!⚠️';
+        result.innerHTML += '<span class="alert">⚠️</span>Você foi <span class="red">multado</span>!<span class="alert">⚠️</span>';
     }
 
     carSpeed.value = "";
