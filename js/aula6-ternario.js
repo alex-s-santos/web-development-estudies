@@ -3,7 +3,7 @@ let num = document.querySelector('#num');
 let result = document.querySelector('#result');
 
 form.addEventListener('submit', returnEvenOrOdd);
-
+num.focus();
 
 
 
@@ -15,6 +15,7 @@ function returnEvenOrOdd(e) {
 
     if(!num.value) {
         alert('O campo não pode estar vazio, insira um número');
+        num.focus();
     } else {
         result.innerHTML = `O número: ${num.value}, é <span class="great">${evenOrOdd}</span>.`;
         num.value = "";
