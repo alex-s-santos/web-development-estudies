@@ -17,5 +17,7 @@ function returnEvenOrOdd(e) {
         alert('O campo não pode estar vazio, insira um número');
     } else {
         result.innerHTML = `O número: ${num.value}, é <span class="great">${evenOrOdd}</span>.`;
+        num.value = "";
+        num.focus();
     }
 }
