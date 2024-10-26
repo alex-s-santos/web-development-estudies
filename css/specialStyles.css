@@ -15,6 +15,10 @@
   animation: alert .8s infinite;
 }
 
+.image-size {
+  width: 8%;
+}
+
 
 /*Animações*/
 @keyframes alert {
