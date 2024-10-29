@@ -22,7 +22,7 @@ function calculateAndReturnImc(e) {
     
 
         let imc = Number(formatElement(weight.value)) / (Number(formatElement(height.value)) ** 2);
-
+        boxResult.style.display = 'block';
         if(imc < 16) {
             resultImc = '<span class="red alert">Magreza grave</span>'
             imageName = 'magro';
@@ -48,12 +48,14 @@ function calculateAndReturnImc(e) {
             resultImc = '<span class="red alert">Obesidade mórbida</span>'
             imageName = 'obeso';
         } else {
-            alert('Resultado inválido, tente novamente!');
+            alert('Valores inválidos, tente novamente!');
+            boxResult.style.display = 'none';
         }
-
 
         result.innerHTML = `Seu IMC é: <span class="great">${imc.toFixed(1)}</span> | Resultado: <span class="great">${resultImc}!</span>`;
         createImageElement(imageName);
+
+
         weight.value = "";
         height.value = "";
         weight.focus();
