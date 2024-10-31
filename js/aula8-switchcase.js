@@ -1,12 +1,19 @@
 let form = document.querySelector('#form');
-let value = document.querySelector('#value');
+let requestedValue = document.querySelector('#requestedValue');
 let installments = document.querySelector('#installments');
-let boxResult = document.querySelector('boxResult');
-let result = document.querySelector('result');
+let result = document.querySelector('#result');
 
-const INTEREST_PERCENTAGE = 0.03;
-let interestValue;
-let options;
+requestedValue.focus();
+form.addEventListener('submit', run);
+
+function run(e) {
+    e.preventDefault();
+
+    let optNumber = Number(installments.value);
 
 
-console.log(installments);
+    result.innerHTML = requestedValue.value;
+
+    requestedValue.value = "";
+    requestedValue.focus();
+}
