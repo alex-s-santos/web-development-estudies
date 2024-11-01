@@ -1,0 +1,1 @@
+document.title = document.getElementsByTagName('h3')[0].innerText;
